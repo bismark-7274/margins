@@ -1,15 +1,16 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @plugin "daisyui" {
   themes: dark --default, sunset;
 }
+@import "./embla-slide";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1rem;
 }
 
 @layer base {
   h1 {
-    @apply font-bold text-slate-800 text-2xl mt-4 mb-3;
+    @apply font-bold text-2xl mt-4 mb-3;
   }
 }

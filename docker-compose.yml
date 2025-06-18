@@ -1,12 +1,12 @@
 services:
   frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./
     ports:
       - "3000:3000"
-    volumes:
-      - ./:/margins-app  
-      - /margins-app/node_modules
-    working_dir: /margins-app
+    # volumes:
+      # - margins:/app  
+    working_dir: /app
     command: ["npm", "run", "dev"]
+
+# volumes:
+#   margins:
