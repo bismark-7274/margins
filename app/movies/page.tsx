@@ -4,7 +4,7 @@ import { getMoviesAction } from '../actions/getMovies';
 import { getGenresAction } from '../actions/getGenres';
 
 const MoviesListing = async () => {
-  const { results: movies } = await getMoviesAction();
+  const { results: movies } = await getMoviesAction({});
   const genres = await getGenresAction();
 
   return (
